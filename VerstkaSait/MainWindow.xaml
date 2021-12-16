@@ -5,19 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VerstkaSait"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="2000" Width="800">
     <ScrollViewer VerticalScrollBarVisibility="Hidden">
         <Grid>
-            <!-- Сетка 5 на 5 -->
+            <!-- Сетка -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="200"></RowDefinition>
-                <RowDefinition Height="200"></RowDefinition>
-                <RowDefinition Height="200"></RowDefinition>
-                <RowDefinition Height="200"></RowDefinition>
-                <RowDefinition Height="200"></RowDefinition>
-                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
 
             </Grid.RowDefinitions>
 
@@ -29,31 +40,55 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
-            <!-- The background -->
+            <!-- The background image Part1-->
             <Image Source="/Img/4.jpg"
-                Grid.RowSpan="3"
-                Grid.ColumnSpan="5" 
-                        
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.RowSpan="4"
+                Grid.ColumnSpan="5"
+                
+                
                 />
-            <!-- menu buttons -->
-            <StackPanel Grid.Column="2" >
-                <Button Background="Transparent">
 
+            <!--<StackPanel Grid.RowSpan="2"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="6"
+                        Background="White"
+                        />-->
 
-                    <TextBlock
-                            FontSize="20px"
-                            FontFamily="Calibri"
-                            FontWeight="Black"
-                            Foreground="White" 
-                            Background="Orange" 
-                            HorizontalAlignment="Left"
-                            
-                            > HEAVY <LineBreak/> INDUSTRY <LineBreak/> A SMALL SCALE PROJECT
-                    </TextBlock> 
+            <!-- White line-->
+            <Border BorderBrush="White" 
+                    BorderThickness="0 1 0 0"
+                    Height="10"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="5"
+                    Margin="0 0 0 50"
+                    >
+            </Border>
+            
+            <!-- menu button Heavy Industry-->
+            <StackPanel Grid.Column="2" 
+                        >
+                <Button 
+                    Background="Transparent"
+                    MaxHeight="300"
+                    MaxWidth="250"
+                    >
+                    <Image Source="Img/HeavyIndustry.png" />
                 </Button>
             </StackPanel>
 
-            <!-- menu buttons  POPULAR MACHINERY CONTACT-->
+            <StackPanel 
+                >
+
+                <!--<Button Background="Transparent">
+                     
+                    <Image Source="/Img/triole.png" />
+                </Button>-->
+
+            </StackPanel>
+            <!-- menu buttons  POPULAR, MACHINERY, CONTACT-->
             <StackPanel Grid.Row="0" 
                         Grid.Column="0" 
                         Grid.ColumnSpan="2" 
@@ -63,25 +98,33 @@
                         Width="400"
                         Margin="27 0 0 0"
                         >
-
-                <Button Background="Transparent" 
+                <!-- menu buttons  POPULAR-->
+                <StackPanel
+                    Grid.Row="1"
+                    Grid.Column="1"> 
+                    <Button Background="Transparent" 
+                        BorderBrush="Transparent"
                         FontFamily="Calibri"
                         Foreground="White"
                         FontSize="14px" 
                         Padding="20px" 
                         Content="POPULAR" 
-                        FontWeight="Normal"/>
+                        FontWeight="Normal"
+                        />
+                </StackPanel>
 
-
+                <!-- menu buttons  MACHINERY-->
                 <Button Background="Transparent" 
+                        BorderBrush="Transparent"
                         FontFamily="Calibri"
                         Foreground="White"
                         FontSize="14px" 
                         Padding="20px" 
                         Content="MACHINERY" 
                         FontWeight="Normal"/>
-
-                <Button Background="Transparent" 
+                <!-- menu buttons CONTACT-->
+                <Button Background="Transparent"
+                        BorderBrush="Transparent"
                         FontFamily="Calibri"
                         Foreground="White"
                         FontSize="14px" 
@@ -92,38 +135,147 @@
             </StackPanel>
 
             <!-- button  TOP INDUSTRIES -->
-            <StackPanel Grid.Row="0" 
-                        Grid.Column="5"
-                        Width="180"
-                        Height="90" 
-                        >
                 
                 <Button Content="TOP INDUSTRIES"
+                        BorderBrush="White"
                         HorizontalAlignment="Center"
+                        BorderThickness="1"
+                        Padding="10"
                         Background="Transparent"
                         FontFamily="Calibri"
                         Foreground="White"
                         FontSize="14px"
-                        Padding="40"
+                        Grid.Column="5"
+                        Grid.Row="0"
+                        VerticalAlignment="Center"
                  />
-            </StackPanel>
 
 
-            <!-- textblock  EXPERIENCE & CRAFTSMANSHIP for centre -->
+
+            <!-- textblock  for centre -->
             <StackPanel Grid.Row="2"
                         Grid.Column="0"
                         Grid.ColumnSpan="5"
                         HorizontalAlignment="Center"
                 >
+                <!-- textblock OUR GOAL IS CONTINUOUSLY -->
                 
-                <TextBlock Text="EXPERIENCE AND CRAFTSMANSHIP"
+                <TextBlock Text="OUR GOAL IS CONTINUOUSLY"
                            VerticalAlignment="Center"
-
+                            
                            Foreground="Orange"
                            FontSize="45px"
+                           FontFamily="Comic Sans MS"
+                           FontWeight="Light"
+                           
                     />
+                <!-- textblock POWERED BY PEOPLE -->
+
+                <TextBlock Text="POWERED BY PEOPLE"
+                           Foreground="White"
+                           Background="Transparent"
+                           FontSize="25px"
+                           FontFamily="Calibri"
+                           HorizontalAlignment="Center"
+                           Margin="0 20 0 0"
+                           FontWeight="Medium"
+                           
+                           />
 
             </StackPanel>
+
+            <!-- textblock  POWERED BY PEOPLE for centre -->
+            <StackPanel Grid.Row="3"
+                        Grid.Column="2"
+                        
+                >
+
+            </StackPanel>
+            
+            <!-- Buttons SEE MORE and DOWLOAD -->
+            <StackPanel Grid.Row="3"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        >
+                <!-- Button SEE MORE -->
+                <Button Content="SEE MORE"
+                        Background="DarkOrange"
+                        Foreground="White"
+                        Height="40"
+                        Width="100"
+                        FontWeight="Black"
+                        Margin="0,0,8,0"
+                        >
+
+                 <!-- Button DOWLOAD -->
+                </Button>
+                <Button Content="DOWNLOAD"
+                        Background="DarkOrange"
+                        Foreground="White"
+                        Height="40"
+                        Width="100"
+                        FontWeight="Black"
+                        Margin="8,0 0 0"
+                        ></Button>
+            </StackPanel>
+            <!-- Background part2 -->
+            <StackPanel Grid.Row="4"
+                        Grid.ColumnSpan="5"
+                        Grid.RowSpan="3"
+                        Background="White"
+                        >
+            </StackPanel>
+
+            <!-- TextPanel ABOUT THE PROJECT -->
+            <StackPanel Grid.Row="5"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3"
+                        >
+
+                    <TextBlock Text="ABOUT THE PROJECT"
+                           HorizontalAlignment="Center"
+                           FontSize="20"
+                           FontFamily="Comic Sans MS"
+                           Height="50"
+                           Padding="10"
+                           Foreground="Orange"
+                    />
+                
+
+                <!-- Black line under TextPanel ABOUT THE PROJECT -->
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Width="60"
+                        />
+                
+            </StackPanel>
+
+            <!-- TextPanel under TextPanel ABOUT THE PROJECT -->
+            <StackPanel Grid.Row="6"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3"
+                        VerticalAlignment="Center"
+                        >
+                <TextBlock TextAlignment="Center"
+                           Height="100"
+                           TextWrapping="Wrap"
+                           FontFamily="sans-serif"
+                           FontSize="13"
+                           >
+                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis 
+                    
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe 
+                    
+                    eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                    
+                </TextBlock>
+
+            </StackPanel>
+
+            
             
         </Grid>
     </ScrollViewer>
