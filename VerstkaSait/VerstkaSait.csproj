@@ -102,6 +102,13 @@
     <Resource Include="Img\sr_soc.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Img\TripaPoloski.png" />
+    <Resource Include="Img\vverx.png" />
+    <Resource Include="Img\image.psd %281%29.png" />
+    <Resource Include="Img\image.psd %282%29.png" />
+    <Resource Include="Img\image.psd %283%29.png" />
+    <Resource Include="Img\image.psd.png" />
+    <Resource Include="Img\picture1.png" />
     <Resource Include="Img\triole.png" />
     <Resource Include="Img\1111.jpg" />
     <Resource Include="Img\12.jpg" />
@@ -124,6 +131,9 @@
     <Resource Include="Img\g6.jpg" />
     <Resource Include="Img\g7.jpg" />
     <Resource Include="Img\HeavyIndustry.png" />
+    <Resource Include="Img\Cloke.png" />
+    <Resource Include="Img\1234.png" />
+    <Resource Include="Img\email.png" />
     <Content Include="Img\icons.svg" />
     <Resource Include="Img\img-sprite.png" />
     <Resource Include="Img\into.png" />

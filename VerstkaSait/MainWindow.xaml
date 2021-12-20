@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VerstkaSait"
         mc:Ignorable="d"
-        Title="MainWindow" Height="2500" Width="1920">
+        Title="MainWindow" Height="4500" Width="1920">
     <ScrollViewer VerticalScrollBarVisibility="Hidden">
-        <Grid>
+        <Grid >
             <!-- Сетка -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
@@ -27,30 +27,52 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <!-- Backgroun Firts Module-->
             <Image Source="/Img/4.jpg"
                 Grid.Column="0"
                 Grid.Row="0"
-                Grid.RowSpan="4"
+                Grid.RowSpan="3"
                 Grid.ColumnSpan="5"
                 />
             
+            
+            <!-- Button in Module1 Right -->
+            <Button Grid.Column="4"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    VerticalAlignment="Top"
+                    Margin="0 40 0 0"
+                    >
+                
+                <Image Source="/Img/vverx.png" 
+                  Width="200"
+                   />
+                
+            </Button>
+            
+            <!-- TripaPoloski -->
+            <Button Background="Transparent"
+                    BorderBrush="Transparent"
+                    Margin="0 0 0 100"
+                >
+
+                <Image Source="/Img/TripaPoloski.png" 
+                       Width="80"
+                       />
+
+            </Button>
+
+
             <!-- menu button Heavy Industry-->
             <StackPanel Grid.Column="2" 
                         Panel.ZIndex="1"
@@ -73,9 +95,9 @@
                         VerticalAlignment="Top"
                         Width="500"
                         >
-                
+
                 <!-- Menu Button POPULAR-->
-                    <Button Background="Transparent" 
+                <Button Background="Transparent" 
                         BorderBrush="Transparent"
                         FontFamily="Calibri"
                         Foreground="White"
@@ -84,7 +106,7 @@
                         Content="POPULAR" 
                         FontWeight="Black"
                         />
-                
+
 
                 <!-- menu buttons  MACHINERY-->
                 <Button Background="Transparent" 
@@ -106,7 +128,7 @@
                         FontWeight="Black"/>
 
             </StackPanel>
-            
+
             <!-- White Line -->
             <Border BorderBrush="White" 
                     BorderThickness="0 1 0 0" 
@@ -119,7 +141,7 @@
             </Border>
 
             <!-- button  TOP INDUSTRIES -->
-                <Button Content="TOP INDUSTRIES"
+            <Button Content="TOP INDUSTRIES"
                         BorderBrush="White"
                         HorizontalAlignment="Left"
                         BorderThickness="1"
@@ -142,7 +164,7 @@
                         HorizontalAlignment="Center"
                 >
                 <!-- textblock OUR GOAL IS CONTINUOUSLY -->
-                
+
                 <TextBlock Text="OUR GOAL IS CONTINUOUSLY"
                            VerticalAlignment="Center"
                            Foreground="#CC7200"
@@ -151,7 +173,7 @@
                            FontWeight="Light"
                            
                     />
-                
+
                 <!--SATISFY OUR CLIENTS -->
                 <TextBlock Text="SATISFY OUR CLIENTS"
                            Foreground="White"
@@ -165,7 +187,7 @@
                            />
 
             </StackPanel>
-            
+
             <!-- Buttons SEE MORE and DOWLOAD -->
             <StackPanel Grid.Row="1"
                         Grid.Column="1"
@@ -174,7 +196,7 @@
                         HorizontalAlignment="Center"
                         VerticalAlignment="Bottom"
                         >
-                
+
                 <!-- Button SEE MORE -->
                 <Button Content="SEE MORE"
                         Background="#CC7200"
@@ -187,7 +209,7 @@
                         
                         >
 
-                 <!-- Button DOWLOAD -->
+                    <!-- Button DOWLOAD -->
                 </Button>
                 <Button Content="DOWNLOAD"
                         Background="#CC7200"
@@ -199,12 +221,12 @@
                         Margin="8,0 0 0"
                         />
             </StackPanel>
-            
+
             <!-- Background White Module2 -->
             <StackPanel Grid.Row="3"
                         Grid.ColumnSpan="5"
-                        Grid.RowSpan="3"
-                        Background="White"
+                        Grid.RowSpan="4"
+                        Background="White" 
                         >
             </StackPanel>
 
@@ -213,29 +235,30 @@
                         Grid.Column="2"
                         Height="100">
 
-                    <TextBlock Text="ABOUT THE PROJECT"
+                <TextBlock Text="ABOUT THE PROJECT"
                            HorizontalAlignment="Center"
-                           
+                           Padding="15"
                            FontSize="35px"
                            
                            FontFamily="Comic Sans MS"
                            Foreground="#CC7200"
                     />
-                
+
 
                 <!-- Black line under TextPanel ABOUT THE PROJECT -->
                 <Border BorderBrush="Black"
                         BorderThickness="1"
                         Width="60"
                         />
-                
+
             </StackPanel>
 
             <!-- TextPanel under TextPanel ABOUT THE PROJECT -->
-            <StackPanel Grid.Row="3"
+            <StackPanel Grid.Row="4"
                         Grid.Column="1"
                         Grid.ColumnSpan="3"
                         VerticalAlignment="Bottom"
+
                         >
                 <TextBlock TextAlignment="Center"
                            TextWrapping="Wrap"
@@ -243,343 +266,841 @@
                            FontSize="16px"
                            Foreground="#666"
                            Padding="15px"
+                           Height="130"      
                            >
                     Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis 
                     
                     voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe 
                     
                     eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                    
+
                 </TextBlock>
 
             </StackPanel>
 
-            <!-- StackPanel part3-->
-            <StackPanel Grid.Row="4"
-                        
-                        Grid.ColumnSpan="5"
-                        Grid.RowSpan="1"
-                        Background="Gray">
-            
-            <!-- StackPanel part3/Modul1/Pictures1-->
-                <StackPanel Height="200"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Center"
-                    Orientation="Horizontal">
-                    
-                    
-                <Image Source="/Img/12.jpg" MaxHeight="250"/>
-
-            <!-- StackPanel part3/Module1/Text1-->
-            <StackPanel MaxHeight="140"
-                        MaxWidth="140"
-                        Background="White"
-                        HorizontalAlignment="Center"
-                        Margin="0,20,0,0"
-                        >
-                <!-- part3/Module1/Text1 H1-->
-                <TextBlock Text="PRIMARY INDUSTRY"
-                           FontFamily="Comic Sans MS"
-                           VerticalAlignment="Center"
-                           
-                           
-                          
-                           HorizontalAlignment="Center"
-                            
-                           Foreground="#CC7200"
-                           Margin="0,20,0,10"
-                    />
-                <Border BorderBrush="Black"
-                        BorderThickness="1"
-                        Width="20"
-                        
-                        
-                    />
-                <!-- StackPanel part3/Module1/Text1 H2-->
-                <TextBlock TextAlignment="Center"
-                           TextWrapping="Wrap" 
-                           Padding="10"
-                           Height="120"
-                           FontSize="10"
-                           Foreground="Gray"
-                           >
-                    There are many variations of
-                    passages of Lorem Ipsum
-                    available, but the majority
-                    believable.
-                </TextBlock>
-            </StackPanel>
-
-            <!-- StackPanel part3/Modul2/Pictures2-->
-
-           
-                <Image Source="/Img/13.jpg" 
-                       Grid.Row="8"
-                        Grid.Column="2"
-                        Grid.ColumnSpan="2"
-                        MaxHeight="180"
-                        MaxWidth="140"
-                       Margin="0,20,0,0"/>
-
-
-            <StackPanel Grid.Row="8"
-                        Grid.Column="3"
-                        Grid.ColumnSpan="2"
-                        MaxHeight="140"
-                        MaxWidth="140"
-                        Background="White"
-                        HorizontalAlignment="Center"
-                        Margin="0,20,0,0"
-                        >
-                <!-- part3/Module1/Text1 H1-->
-                <TextBlock
-                           FontFamily="Comic Sans MS"
-                           Height="40"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           Padding="10"
-                           Foreground="#CC7200"
-                           TextWrapping="Wrap"
-                           Margin="0,0,0,10"
-                           TextAlignment="Center"
-                                  
-                    >
-                    SECONDARY
-                    INDUSTRY</TextBlock>
-                <Border BorderBrush="Black"
-                        BorderThickness="1"
-                        Width="20"
-                        
-                        
-                    />
-                <!-- StackPanel part3/Module1/Text1 H2-->
-                <TextBlock TextAlignment="Center"
-                           TextWrapping="Wrap" 
-                           Padding="10"
-                           Height="120"
-                           FontSize="10"
-                           Foreground="Gray"
-                           >
-                    There are many variations of
-                    passages of Lorem Ipsum
-                    available, but the majority
-                    believable.
-                </TextBlock>
-            </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="/Img/12.jpg" 
-
-                       HorizontalAlignment="Center"
-                       Height="140"
-                       Margin="0,20,0,0"/>
-
-
-                    <!-- StackPanel part3/Module1/Text1-->
-                    <StackPanel Grid.Row="8"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="2"
-                        MaxHeight="140"
-                        MaxWidth="140"
-                        Background="White"
-                        HorizontalAlignment="Center"
-                        Margin="0,20,0,0"
-                        >
-                        <!-- part3/Module1/Text1 H1-->
-                        <TextBlock Text="PRIMARY INDUSTRY"
-                           FontFamily="Comic Sans MS"
-                           VerticalAlignment="Center"
-                           
-                           
-                          
-                           HorizontalAlignment="Center"
-                            
-                           Foreground="#CC7200"
-                           Margin="0,20,0,10"
-                    />
-                        <Border BorderBrush="Black"
-                        BorderThickness="1"
-                        Width="20"
-                        
-                        
-                    />
-                        <!-- StackPanel part3/Module1/Text1 H2-->
-                        <TextBlock TextAlignment="Center"
-                           TextWrapping="Wrap" 
-                           Padding="10"
-                           Height="120"
-                           FontSize="10"
-                           Foreground="Gray"
-                           >
-                    There are many variations of
-                    passages of Lorem Ipsum
-                    available, but the majority
-                    believable.
-                        </TextBlock>
-                    </StackPanel>
-
-                    <!-- StackPanel part3/Modul2/Pictures2-->
-
-
-                    <Image Source="/Img/13.jpg" 
-                       Grid.Row="8"
-                        Grid.Column="2"
-                        Grid.ColumnSpan="2"
-                        MaxHeight="180"
-                        MaxWidth="140"
-                       Margin="0,0,0,20"/>
-
-
-                    <StackPanel Grid.Row="8"
-                        Grid.Column="3"
-                        Grid.ColumnSpan="2"
-                        MaxHeight="140"
-                        MaxWidth="140"
-                        Background="White"
-                        HorizontalAlignment="Center"
-                        Margin="0,20,0,0"
-                        >
-                        <!-- part3/Module1/Text1 H1-->
-                        <TextBlock
-                           FontFamily="Comic Sans MS"
-                           Height="40"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           Padding="10"
-                           Foreground="#CC7200"
-                           TextWrapping="Wrap"
-                           Margin="0,0,0,10"
-                           TextAlignment="Center"
-                                  
-                    >
-                    SECONDARY
-                    INDUSTRY</TextBlock>
-                        <Border BorderBrush="Black"
-                        BorderThickness="1"
-                        Width="20"
-                        
-                        
-                    />
-                        <!-- StackPanel part3/Module1/Text1 H2-->
-                        <TextBlock TextAlignment="Center"
-                           TextWrapping="Wrap" 
-                           Padding="10"
-                           Height="120"
-                           FontSize="10"
-                           Foreground="Gray"
-                           >
-                    There are many variations of
-                    passages of Lorem Ipsum
-                    available, but the majority
-                    believable.
-                        </TextBlock>
-                    </StackPanel>
-                </StackPanel>
-            </StackPanel>
-
-
-
-
-            <!-- Header for part4-->
-            <StackPanel Grid.Row="11"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="3"
-                        
-                        >
-                    <!-- textblock Header-->
-                <TextBlock Text="TOP INDUSTRIES"
-                           FontFamily="Comic Sans MS"
-                           TextAlignment="Center"
-                           FontSize="25"
-                           Foreground="#CC7200"
-                           Padding="20"
-                          
-                    />
-            </StackPanel>
-                
-            <!--  -->
-
-            <StackPanel Orientation="Horizontal"
-                        Grid.Row="12"
-                        Grid.ColumnSpan="5"
-                        HorizontalAlignment="Center"
-                        >
-
-                <Image Source="/Img/1111.jpg" 
-                        Width="180"
-                       Height="180"
-                       Margin="0 0 30 0"
-                       />
-
-                <Image Source="/Img/g2.jpg"
-                        Width="180"
-                       Height="180"
-                       Margin="0 0 30 0"
-                       />
-                        
-                <Image Source="/Img/g3.jpg"
-                       Width="180"
-                       Height="180"
-                       />
-
-            </StackPanel>
-
-            <StackPanel Grid.Row="13"
-                        Grid.ColumnSpan="5"
-                        HorizontalAlignment="Center"
-                        >
-                
-                
-                
-            </StackPanel>
-            
-
-            <!-- Background part5-->
-            <StackPanel
-                Orientation="Horizontal"
-                Grid.Row="14"
-                Grid.Column="0"
-                Grid.ColumnSpan="5"
-                Grid.RowSpan="3"
-                >
-                
-                <Image Source="Img/banner1.jpg"/>
-            </StackPanel>
-            
-            
-            <!-- Background part6 -->
-            <StackPanel Grid.Row="17"
-                        Grid.RowSpan="4"
+            <!-- Module3 BACKGROUND-->
+            <StackPanel Grid.Row="5"
+                        Grid.RowSpan="2"
                         Grid.ColumnSpan="5"
                         Background="Gray"
                         >
             </StackPanel>
             
-            
-           <!-- Header part6 -->
-            <StackPanel Grid.Row="17"
-                        
+            <!-- Module3 Block1-->
+            <StackPanel Height="350"
+                        Width="1400"
+                        Grid.Row="5"
+                        Grid.ColumnSpan="5"
+                        Orientation="Horizontal"
+                        Margin="0 60 0 0"
                         >
-                <!-- Header GET INSPIRED -->
-                <TextBlock Text="GET INSPIRED"
-                           FontSize="20px"
-                           HorizontalAlignment="Center"
-                           Padding="20"
-                           Foreground="#CC7200"
+                <!-- Picture1 -->
+                <Image Source="/Img/12.jpg"
+                       Height="350"
+                       />
+                
+                <!-- Text1 -->
+                <StackPanel Width="350"
+                            Background="White"
+                            Orientation="Vertical"
+                            
+                        >
+                    
+                    <TextBlock Text="PRIMARY INDUSTRY"
                            FontFamily="Comic Sans MS"
-                           Width="180"
-                          />
+                           HorizontalAlignment="Center"
+                           Foreground="#CC7200"
+                           FontSize="25px"
+                           Margin="0 60 0 0"
+                           Padding="15"
+                    />
+
+                    <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Width="30" 
+                    />
+
+                    <TextBlock TextAlignment="Center"
+                           FontWeight="Light"
+                           TextWrapping="Wrap" 
+                           Padding="20"
+                           Height="200"
+                           FontSize="18px"
+                           Foreground="Black"
+                           >
+                    There are many variations of
+                    passages of Lorem Ipsum
+                    available, but the 
+                    majority believable.
+                        
+                    </TextBlock>
+                    
+                </StackPanel>
+
+                <!-- Picture2 -->
+                <Image Source="/Img/13.jpg" />
+
+                <!-- Text2 -->
+
+                <StackPanel Background="White"
+                            Height="350"
+                            Width="350">
+
+            
+                    <TextBlock TextWrapping="Wrap"
+                           FontFamily="Comic Sans MS"
+                           HorizontalAlignment="Center"
+                           Foreground="#CC7200"
+                           FontSize="25px"
+                           Margin="0 60 0 0"
+                           Padding="20px"
+                           Width="200"
+                    >
+                    SECONDARY 
+                    INDUSTRY
+                    </TextBlock>
+
+                    <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Width="30" 
+                    />
+
+                    <TextBlock TextAlignment="Center"
+                           FontWeight="Light"
+                           TextWrapping="Wrap" 
+                           Padding="20"
+                           Height="200"
+                           FontSize="18px"
+                           Foreground="Black"
+                           >
+                    There are many variations of
+                    passages of Lorem Ipsum
+                    available, but the 
+                    majority believable.
+
+                    </TextBlock>
+
+                </StackPanel>
+                
+                
+                
+
+            </StackPanel>
+
+            
+            <!-- Module3 Block2-->
+            <StackPanel Height="400"
+                        Width="1400"
+                        Grid.Row="6"
+                        Grid.ColumnSpan="5"
+                        Orientation="Horizontal"
+                        Margin="0 0 0 60"
+                        >
+                <!-- Text1 -->
+                <StackPanel Background="White"
+                            Height="400"
+                            Width="350">
+
+                    <TextBlock Text="TERRITORY INDUSTRY"
+                           FontFamily="Comic Sans MS"
+                           HorizontalAlignment="Center"
+                           Foreground="#CC7200"
+                           FontSize="25px"
+                           Margin="0 60 0 0"
+                           Padding="20px"
+                    />
+
+
+
+                    <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Width="30" 
+                    />
+
+                    <TextBlock TextAlignment="Center"
+                           FontWeight="Light"
+                           TextWrapping="Wrap" 
+                           Padding="20"
+                           Height="200"
+                           FontSize="18px"
+                           Foreground="Black"
+                           >
+                        
+                    There are many variations of
+                    passages of Lorem Ipsum available,
+                    but the majority believable.
+                        
+                    </TextBlock>
+
+                </StackPanel>
+
+               <!-- Picture1 -->
+                <Image Source="/Img/14.jpg" 
+                       Width="350"
+                       Height="400"
+                       />
+                <!-- Text2 -->
+                <StackPanel Background="White"
+                            Height="400"
+                            Width="350">
+
+                    <TextBlock TextWrapping="Wrap"
+                           FontFamily="Comic Sans MS"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           TextAlignment="Center"
+                           Foreground="#CC7200"
+                           FontSize="25px"
+                           Margin="0 60 0 0"
+                           Padding="20px"
+                    >
+                        LARGE SCALE 
+                        INDUSTRY
+                    </TextBlock>
+
+                    <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Width="30" 
+                    />
+
+                    <TextBlock TextAlignment="Center"
+                           FontWeight="Light"
+                           TextWrapping="Wrap" 
+                           Padding="20"
+                           Height="200"
+                           FontSize="18px"
+                           Foreground="Black"
+                           >
+                    There are many variations of
+                    passages of Lorem Ipsum available,
+                    but the majority believable.
+                    </TextBlock>
+                    
+                </StackPanel>
+
+                <!-- Picture2 -->
+                <Image Source="/Img/15.jpg" />
+
+            </StackPanel>
+
+
+            <!-- Module4 -->
+            <StackPanel Grid.Row="7"
+                        Grid.Column="2"
+                        Height="100"
+                        >
+                
+                <!-- Header -->
+                <TextBlock Text="TOP INDUSTRIES"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Padding="40"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           FontSize="30px"
+                    />
+
 
             </StackPanel>
             
-            <!-- Textblock for Header part6 -->
-            <StackPanel Grid.Row="18"
-                        Grid.RowSpan="2"
+            <!-- Picture1-2-3 In Module4 -->
+            <StackPanel Height="250"
+                        Width="1400"
+                        Grid.Row="8"
+                        Grid.ColumnSpan="5"
+                        Orientation="Horizontal"
+                        Background="White"
+                        >
+
+                <Image Source="/Img/g1.jpg"  />
+
+                <Image Source="/Img/g2.jpg" 
+                       Margin="100 0 0 0"
+                       />
+
+                <Image Source="/Img/g3.jpg" 
+                       Margin="60 0 0 0"/>
+                
+            </StackPanel>
+
+            <!-- Picture4-5-6 In Module4 -->
+            <StackPanel Height="250"
+                        Width="1400"
+                        Grid.Row="9"
+                        Grid.ColumnSpan="5"
+                        Orientation="Horizontal"
+                        Background="White"
+                        Margin="0 40 0 100"
+                        >
+
+                <Image Source="/Img/g4.jpg" 
+                       />
+                
+                <Image Source="/Img/g5.jpg" 
+                       Margin="100 0 0 0"
+                       />
+
+                <Image Source="/Img/g6.jpg" 
+                       Margin="60 0 0 0"/>
+
+            </StackPanel>
+
+
+            <!-- BACKGROUND MODULE 5 -->
+            <StackPanel Grid.Row="10"
+                        Grid.RowSpan="3"
+                        Grid.ColumnSpan="5"
                         >
                 
+                <Image Source="/Img/banner1.jpg" />
+
+            </StackPanel>
+            
+            
+            <!--Picture 1 Module5 -->
+            <StackPanel Grid.Row="11"
+                       HorizontalAlignment="Right"
+                >
+                
+                <Image Source="/Img/image.psd (2).png" 
+                      Height="180"
+                      />
+                
+            </StackPanel>
+
+            <!--Picture 2 Module5 -->
+            <StackPanel Grid.Row="12"
+                        HorizontalAlignment="Right"
+                >
+                
+                <Image Source="/Img/image.psd (1).png" 
+                       Height="180"
+                       />
+                
+            </StackPanel>
+
+            <!--Picture 3 Module5 -->
+            <StackPanel Grid.Row="11"
+                        Grid.Column="2"
+                        HorizontalAlignment="Right"
+                >
+                
+                <Image Source="/Img/image.psd.png" 
+                       Height="180"
+                      />
+                
+            </StackPanel>
+
+            <!--Picture 4 Module5 -->
+            <StackPanel Grid.Row="12"
+                        Grid.Column="2"
+                        HorizontalAlignment="Right"
+                >
+                
+                <Image Source="/Img/image.psd (3).png" 
+                       Height="180"
+                       />
+
+            </StackPanel>
+
+            <!-- Textbloke Header 5 -->
+
+            <StackPanel Grid.Row="10"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Orientation="Vertical"
+                        >
+                
+                <!-- Header 1 Module 5  -->
+                <TextBlock Text="FEATURED SERVICES"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           FontSize="45px"
+                    />
+
+                <Button Background="#333"
+                        BorderBrush="#333"
+                        BorderThickness="1"
+                        Width="80" 
+                    />
+
+            </StackPanel>
+            
+            <!-- H1 For Module5 -->
+            <StackPanel Grid.Row="11"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Left"
+                        Width="400"
+                        >
+                
+                <!-- Text H1 -->
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="23px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                    >
+                    VEL ILLUM QUI DOLOREM EUM 
+                    FUGIAT QUO VOLUPTAS NULLA
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           Foreground="White"
+                           FontWeight="Light"
+                           Margin="0 30 0 0"
+                           FontSize="20"
+                           
+                    
+                    >
+                    To take a trivial example, which of us ever undertakes
+                    laborious physical exercise, except to obtain some
+                    advantage from it doloribus asperiores repellat.
+                </TextBlock>
                 
             </StackPanel>
             
+            
+            <!-- H2 For Module 5 -->
+
+            <StackPanel Grid.Row="11"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Left"
+                        Width="400"
+                        >
+                <!-- Text H2 -->
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="23px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           
+                    >
+                    
+                    VEL ILLUM QUI DOLOREM EUM 
+                    FUGIAT QUO VOLUPTAS NULLA
+                </TextBlock>
+
+                
+                
+                <TextBlock TextWrapping="Wrap"
+                           Foreground="White"
+                           FontWeight="Light"
+                           Margin="0 30 0 0"
+                           FontSize="20"
+                    >
+                    To take a trivial example, which of us ever undertakes
+                    laborious physical exercise, except to obtain some
+                    advantage from it doloribus asperiores repellat.
+                </TextBlock>
+
+            </StackPanel>
+
+            <!-- H3 For Module 5 -->
+            <StackPanel Grid.Row="12"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Left"
+                        Width="400"
+                        >
+                
+                <!-- Text H3 -->
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="23px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           
+                    >
+                    
+                    VEL ILLUM QUI DOLOREM EUM 
+                    FUGIAT QUO VOLUPTAS NULLA
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           Foreground="White"
+                           FontWeight="Light"
+                           Margin="0 30 0 0"
+                           FontSize="20"
+                           
+                    
+                    >
+                    To take a trivial example, which of us ever undertakes
+                    laborious physical exercise, except to obtain some
+                    advantage from it doloribus asperiores repellat.
+                </TextBlock>
+
+            </StackPanel>
+
+            <!-- H4 For Module 5 -->
+            <StackPanel Grid.Row="12"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Left"
+                        Width="400"
+                        >
+                
+                <!-- Text H4 -->
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="23px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                    >
+                    VEL ILLUM QUI DOLOREM EUM 
+                    FUGIAT QUO VOLUPTAS NULLA
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           Foreground="White"
+                           FontWeight="Light"
+                           Margin="0 30 0 0"
+                           FontSize="20"
+                           
+                    
+                    >
+                    To take a trivial example, which of us ever undertakes
+                    laborious physical exercise, except to obtain some
+                    advantage from it doloribus asperiores repellat.
+                </TextBlock>
+
+            </StackPanel>
+
+            <!-- BACKGROUND MODULE 6 -->
+            <StackPanel Grid.Row="13"
+                        Grid.ColumnSpan="5"
+                        Grid.RowSpan="3"
+                        Background="#FF999999"
+                        >
+
+            </StackPanel>
+                        
+            <!-- Header Module 6-->
+            <StackPanel Grid.Row="13"
+                        Grid.Column="0"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                >
+                
+                <!-- Header 1-->
+                <TextBlock Text="GET INSPIRED"
+                           FontSize="20px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           TextAlignment="Left"
+                    />
+                
+            </StackPanel>
+
+            <StackPanel Grid.Row="13"
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                >
+
+                <!-- Header 2 -->
+                <TextBlock Text="SUPPORT"
+                           FontSize="20px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           TextAlignment="Left"
+                    />
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="13"
+                        Grid.Column="2"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                >
+
+                <!-- Header 3 -->
+                <TextBlock Text="CONTENTS"
+                           FontSize="20px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           TextAlignment="Left"
+                    />
+
+            </StackPanel>
+
+            
+            <StackPanel Grid.Row="13"
+                        Grid.Column="3"
+                        Grid.RowSpan="2"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Width="250"
+                >
+
+                <!-- Header 4 -->
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="20px"
+                           FontFamily="Comic Sans MS"
+                           Foreground="#CC7200"
+                           TextAlignment="Left"
+                           
+                          
+                        >
+                SUBSCRIBE TO OUR 
+                MAILING LIST
+                </TextBlock>
+
+            </StackPanel>
+            
+            
+            <!-- Text Block for Header ONE-->
+            <StackPanel Orientation="Vertical"
+                        Grid.Row="14"
+                >
+                
+               <!-- P1 Module 6-->
+                <Button Content="Machinery"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="300px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                        
+                    />
+
+                <!-- P2 Module 6-->
+                <Button Content="Instrumentation"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="325px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                        
+                    />
+
+                <!-- P3 Module 6-->
+                <Button Content="Mechanisms"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="310px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                        
+                    />
+
+                <!-- P4 Module 6-->
+                <Button Content="Protections"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="305px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                        
+                    />
+                
+            </StackPanel>
+
+            <!-- Text Block for Header TWO-->
+            
+            <StackPanel Orientation="Vertical"
+                        Grid.Row="14"
+                        Grid.Column="1"
+                >
+
+                <!-- P1 Module 6-->
+                <Button Content="Terms And Conditions"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="400px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+                <!-- P2 Module 6-->
+                <Button Content="Privacy Policy"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="360px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+                <!-- P3 Module 6-->
+                <Button Content="Contact"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="330px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+                <!-- P4 Module 6-->
+                <Button Content="FAQ"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="310px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+            </StackPanel>
+            
+            
+
+            <!-- Text Block for Header Four-->
+            <StackPanel Orientation="Vertical"
+                        Grid.Row="14"
+                        Grid.Column="2"
+                >
+
+                <!-- P1 Module 6-->
+                <Button Content="Asperiores"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="315px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+                <!-- P2 Module 6-->
+                <Button Content="Doloribus"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="310px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+                <!-- P3 Module 6-->
+                <Button Content="Asperiores"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="315px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+                <!-- P4 Module 6-->
+                <Button Content="Doloribus"
+                        Background="Transparent"
+                        Foreground="white"
+                        FontWeight="Light"
+                        BorderBrush="Transparent"
+                        FontSize="12px"
+                        Width="310px"
+                        Padding="5px"
+                        HorizontalAlignment="Left"
+                    />
+
+            </StackPanel>
+            
+            <Image Source="/Img/1234.png" Grid.Column="3"
+                   Grid.Row="15"
+                   Height="50"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="60 0 0 0"
+                   />
+
+            <!-- Enter Email -->
+            <StackPanel Grid.Row="14"
+                        Grid.Column="3"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal"
+                        MaxHeight="50px"
+                >
+                <TextBox  Background="White"
+                          Height="35"
+                          Width="200"
+                          Margin="65 20 0 0"
+                          TextAlignment="Left"
+                          Padding="5px"
+                          FontSize="15px"
+                          Foreground="#FFC4C4C4"
+                          BorderBrush="White"
+                          
+                    >
+                    Enter your email
+                </TextBox>
+                <!-- Image email -->
+
+                <Button BorderBrush="Transparent"
+                        Background="Transparent" 
+                        
+                        
+                        >
+                    <Image Source="/Img/email.png" 
+                       Height="35px"
+                       Margin="0 20 0 0"/>
+
+                </Button>
+
+            </StackPanel>
+
+            <!-- Module 7 -->
+            <StackPanel Grid.Row="16"
+                        Grid.ColumnSpan="5"
+                        Background="#CC7200"
+                >
+                
+            </StackPanel>
+
+            <!-- TextContent in Module 7 -->
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="16"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3"
+                        HorizontalAlignment="Center"
+                >
+
+                <TextBlock Text="© 2015 Heavy Industry. All rights reserved | Design by"
+                           Foreground="White"
+                           FontSize="24px"
+                           VerticalAlignment="Center"
+                    />
+                <Button Content="W3layouts"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Foreground="White"
+                        Height="40"
+                        Width="140px"
+                        FontSize="24px"
+                    />
+
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </Window>
